@@ -168,6 +168,9 @@
         <plugin>
           <artifactId>maven-surefire-plugin</artifactId>
           <version>2.11</version>
+		<configuration>
+			<argLine>${argLine} -Xmx2048m</argLine>
+		</configuration>
         </plugin>
 
         <plugin>
